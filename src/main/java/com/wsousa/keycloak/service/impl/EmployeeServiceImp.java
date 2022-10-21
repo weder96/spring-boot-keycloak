@@ -21,9 +21,9 @@ public class EmployeeServiceImp implements EmployeeService {
     public void initializeEmployeeTable() {
         employeeRepository.saveAll(
                 Stream.of(
-                        new Employee("john", 20000),
-                        new Employee("mak", 55000),
-                        new Employee("peter", 120000)
+                        new Employee("Arthur", 100000),
+                        new Employee("William", 55000),
+                        new Employee("Peter", 120000)
                 ).collect(Collectors.toList()));
     }
 
